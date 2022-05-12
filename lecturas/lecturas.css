@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+
+}
+ h2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.8rem;
+    font-size: 2.2rem; 
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+    font-style: italic;
+    margin: 2rem 0 2rem 0;
+}
+h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    padding-top: 2.5rem;
+
+
+}
+.contenedor {
+width: 100%;
+height: 170rem;
+   background-image: url(/fondo.png);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.subcontainer {
+    width: 80%;
+    height: 160rem;
+    background-color:rgb(238, 241, 241,0.5) ;   
+    margin-top: 1.8rem;
+    
+}
+.info {
+    margin: 1.2rem 2rem 1.5rem 2rem;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.tarjet{
+margin: 1rem 1.2rem 1.3rem 1.4rem;
+background-color: aqua;
+width: 350px;
+margin-top: 2rem;
+}
+    .tarjet figure{
+       position:relative;
+        height: 450px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .tarjet figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .tarjet figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .tarjet figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .tarjet figure:hover > .capa h3{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .tarjet figure:hover > img{
+        transform: scale(1.3);
+    }
+    .tarjet figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .tarjet figure .capa p{
+        color: #fff;
+        font-size: 20px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+
+    .fp3 {
+
+        margin-left: 16%;
+        border-radius:5%;
+        width: 40rem;
+        height: 25rem;
+        margin-top: 1.5rem ;
+    }
+
+    
+.button {
+display: inline-block;
+text-decoration: none;
+text-align: center;
+letter-spacing: 0.2rem;
+    margin-left: 36%; 
+    width: 16rem;
+    height: auto;
+    padding: .7rem;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: 2px solid #000000;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+  .button:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 20px #ffffff;
+    color: #ffffff;
+background-color: #101111;
+}
+
+
+
+
+
