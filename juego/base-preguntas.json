@@ -1,0 +1,32 @@
+[
+    {
+        "categoria": "Fundamentos de programación",
+        "pregunta": "¿Qué es una variable?",
+        "respuesta": "Un espacio en memoria",
+        "incorrecta1": "ncorrecta",
+        "incorrecta2": "Incorrecta",
+        "incorrecta3": "Incorrecta",
+        "imagen": "https://uploadgerencie.com/imagenes/ejemplo-del-uso-de-variables-en-excel.png",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Fundamentos de programación",
+        "pregunta": "Pintor de  \"El jardín de las delicias\"",
+        "respuesta": "Un espacio en memoria",
+        "incorrecta1": "ncorrecta",
+        "incorrecta2": "Incorrecta",
+        "incorrecta3": "Incorrecta",
+        "imagen": "https://uploadgerencie.com/imagenes/ejemplo-del-uso-de-variables-en-excel.png",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Fundamentos de programación",
+        "pregunta": "¿Qué es un diagrama de flujo?",
+        "respuesta": "Correcta",
+        "incorrecta1": "ncorrecta",
+        "incorrecta2": "Incorrecta",
+        "incorrecta3": "Incorrecta",
+        "imagen": "https://uploadgerencie.com/imagenes/ejemplo-del-uso-de-variables-en-excel.png",
+        "objectFit": "cover"
+    }
+]
