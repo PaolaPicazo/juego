@@ -39,6 +39,7 @@ h1 {
     background: white;
     min-width: 300px;
     width: 70%;
+    height: 400px;
     max-width: 600px;
     padding: 10px;
   }
@@ -81,7 +82,16 @@ h1 {
     box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 20px #ffffff;
 
   } 
-  
+
+
+
+  #number {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 27px;
+    background-color: rgb(89, 89, 223,0.4);
+  }
   .numero{
     position: absolute;
     opacity:0.3;

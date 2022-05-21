@@ -2,10 +2,32 @@ let preguntas_aleatorias = true;
 let mostrar_pantalla_juego_términado = true;
 let reiniciar_puntos_al_reiniciar_el_juego = true;
 
+//////////////////Contador
+
+let num = document.querySelector("#number");
+
+function contador (){
+  let valorInicial = 10;
+  window.setInterval(function () {   
+  num.innerHTML = valorInicial;
+  valorInicial--;
+  if (valorInicial === 0) {
+
+     valorInicial = 10;
+     reiniciar(); 
+    
+  }
+}, 1000);
+}
+
+
 window.onload = function () {
+  contador();
   base_preguntas = readText("base-preguntas.json");
   interprete_bp = JSON.parse(base_preguntas);
   escogerPreguntaAleatoria();
+
+
 };
 
 let pregunta;
@@ -37,12 +59,19 @@ function escogerPreguntaAleatoria() {
     if (npreguntas.length == interprete_bp.length) {
       //Aquí es donde el juego se reinicia
       if (mostrar_pantalla_juego_términado) {
-        swal.fire({
-          title: "Juego finalizado",
+        swal({
+          title: "Felicidades, juego finalizado, ¡puedes seguir practicando!",
           text:
-            "Puntuación: " + preguntas_correctas + "/" + (preguntas_hechas - 1),
+            "Puntuación: " + preguntas_correctas + "/" + (preguntas_hechas),
           icon: "success"
+          
         });
+        setTimeout(() => {
+
+          location.href="../niveles.html";
+
+        }, 5000);
+
       }
       if (reiniciar_puntos_al_reiniciar_el_juego) {
         preguntas_correctas = 0
@@ -102,15 +131,18 @@ function desordenarRespuestas(pregunta) {
 let suspender_botones = false;
 
 function oprimir_btn(i) {
+ 
   if (suspender_botones) {
     return;
   }
   suspender_botones = true;
   if (posibles_respuestas[i] == pregunta.respuesta) {
-    preguntas_correctas++;
+    preguntas_correctas++; 
     btn_correspondiente[i].style.background = "lightgreen";
+    contador();
   } else {
     btn_correspondiente[i].style.background = "pink";
+    contador();
   }
   for (let j = 0; j < 4; j++) {
     if (posibles_respuestas[j] == pregunta.respuesta) {
@@ -119,6 +151,7 @@ function oprimir_btn(i) {
     }
   }
   setTimeout(() => {
+    
     reiniciar();
     suspender_botones = false;
   }, 1000);
@@ -131,7 +164,16 @@ function reiniciar() {
     btn.style.background = "white";
   }
   escogerPreguntaAleatoria();
+  
 }
+
+function reiniciarU() {
+  for (const btn of btn_correspondiente) {
+    btn.style.background = "white";
+  }
+  
+}
+
 
 function select_id(id) {
   return document.getElementById(id);

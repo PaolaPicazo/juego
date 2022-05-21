@@ -102,12 +102,11 @@ margin-top: 2rem;
     }
 
     .fp3 {
-
-        margin-left: 16%;
+        margin-top: 2rem;    
+        margin-left: 19%;
         border-radius:5%;
         width: 40rem;
         height: 25rem;
-        margin-top: 1.5rem ;
     }
 
     
@@ -136,7 +135,23 @@ letter-spacing: 0.2rem;
 background-color: #101111;
 }
 
-
-
-
-
+.btn-r { 
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1rem;
+         margin-left: 3%;  
+        padding: 0.5rem 1rem 0.5rem 1rem;   
+        cursor: pointer;
+        border-radius: 6px;
+        text-transform: uppercase;
+        color: rgb(5, 5, 5);
+        font-size: .9rem;
+        border: 2px solid #000000;
+        font-weight: 700;
+        }
+    
+      .btn-r:hover {
+        box-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+        color: #ffffff;
+        background-color: rgb(31, 29, 29);
+    }

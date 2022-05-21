@@ -66,3 +66,24 @@ letter-spacing: 0.2rem;
 font-size: 1.4rem;
 
 }
+.btn-r { 
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1rem;
+        margin-left: -35%; 
+        padding: 0.5rem 1rem 0.5rem 1rem;   
+        cursor: pointer;
+        border-radius: 6px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: .9rem;
+        border: 2px solid #ffffff;
+        font-weight: 700;
+        }
+    
+      .btn-r:hover {
+        box-shadow: 0 0 10px #788080, 0 0 10px #788080, 0 0 10px #788080;
+        color: #ffffff;
+   
+    
+    }
