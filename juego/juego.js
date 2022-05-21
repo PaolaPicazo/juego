@@ -1,35 +1,41 @@
 let preguntas_aleatorias = true;
 let mostrar_pantalla_juego_términado = true;
 let reiniciar_puntos_al_reiniciar_el_juego = true;
+var intervalo;
 
 //////////////////Contador
 
 let num = document.querySelector("#number");
 
-function contador (){
-  let valorInicial = 10;
-  window.setInterval(function () {   
-  num.innerHTML = valorInicial;
-  valorInicial--;
-  if (valorInicial === 0) {
-
-     valorInicial = 10;
-     reiniciar(); 
-    
-  }
-}, 1000);
-}
 
 
 window.onload = function () {
-  contador();
+  
   base_preguntas = readText("base-preguntas.json");
   interprete_bp = JSON.parse(base_preguntas);
   escogerPreguntaAleatoria();
+  contador();
 
 
 };
 
+function contador (){
+  let valorInicial = 10;
+    intervalo = window.setInterval(function () {   
+  num.innerHTML = valorInicial;
+  valorInicial--;
+  console.log(valorInicial);
+  if (valorInicial === 0) {
+    valorInicial = 10;
+    reiniciar();
+    
+  }
+  
+}, 1000);
+}
+function detenerTimer(){
+  clearInterval(intervalo);
+}
 let pregunta;
 let posibles_respuestas;
 btn_correspondiente = [
@@ -66,6 +72,7 @@ function escogerPreguntaAleatoria() {
           icon: "success"
           
         });
+        detenerTimer();
         setTimeout(() => {
 
           location.href="../niveles.html";
@@ -139,9 +146,13 @@ function oprimir_btn(i) {
   if (posibles_respuestas[i] == pregunta.respuesta) {
     preguntas_correctas++; 
     btn_correspondiente[i].style.background = "lightgreen";
+    // contador();
+    detenerTimer();
     contador();
   } else {
     btn_correspondiente[i].style.background = "pink";
+    // contador();
+    detenerTimer();
     contador();
   }
   for (let j = 0; j < 4; j++) {

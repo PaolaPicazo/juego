@@ -15,13 +15,12 @@
     <h2>Tópicos Avazados de Programación</h2>
    
     <div class="info">
-    <p style="text-align: center;">Tener buenas bases antes de comenzar a programar es parte importante de
-            nuestro desarrollo como programadores, es por eso que es importante conocer los
-            conceptos basicos antes de incurcionar en el mundo de la programación. 
+    <p style="text-align: center;">Ahora que ya sabes los conceptos basicos de la programación aprendamos un poco mas
+        hacerca de Topicos Avanzados de Programación.
             <br>
             <div class="tarjet" style="float:right;">          
                 <figure>
-                    <img  src="/img/fp1.jpg">
+                    <img  src="/img/tap.jpg">
                     <div class="capa">
                         <h3>¡Recuerda!</h3>
                         <p>El ordenador entiende el lenguaje de bajo nivel el cual es el lenguaje binario  (0,1) este es dificil para los humanos pero 
@@ -30,51 +29,109 @@
                     </div>
                 </figure>
             </div>
-            <h3>Sobre ceros y unos...</h3>
-            Antes de iniciar debemos saber que <b>el ordenador es una máquina eléctrica y solo entiende el código binario (1 y 0). </b>  <br>
-            Donde: </br> 
+            <h3>Sobre eventos...</h3>
+            Un evento es la notificación que hace un elemento gráfico cuando el usuario interactúa con él. Por lo tanto, si se realiza alguna acción sobre algún elemento de la interfaz, se dice que se
+             ha generado un evento en dicho elemento.
+       <br>      
+Existen dos tipos de eventos: </br> 
             <b>  
-            1 = hay corriente
+           Eventos de bajo nivel <br>
+           Eventos Semanticos
         </br>  
-            0 = No hay corriente
-            <br> </b> 
-            Sin embargo este lenguaje es muy dificil para los humanos, es por eso que existen dos tipos de lenguajes: <br>
-            <ul> <b>
-                <li>Lenguajes de alto nivel:</li>
-                <li>Lenguajes de bajo nivel</li> </b> 
-            </ul> 
-           <b>Los lenguajes de programación de alto nivel permiten dar órdenes al ordenador con un lenguaje parecido al nuestro </b> (Visual Basic, Pascal, Logo, C++, JavaScript, etc.) y siempre o casi siempre en ingles.
-          <b>  mientras que los lenguajes más cercanos al idioma del ordenador, llamados de bajo nivel, son muy complicados (casi como el código del ordenador) y poco usados. </b> 
-            </p> 
+           <h3> Sobre Eventos de bajo nivel... </h3>
+             </b> 
+            <b>Eventos de bajo nivel:</b> <br> Representan entradas o interacciones de bajo nivel con elementos del interfaz gráfico (Cambio de tamaño, cambio del foco, operación con el ratón o con el teclado).
+             <br>
+             <!-- ///// -->
+             <div id="main-container">
 
-            <p>
-                <h3  >Sobre programas, algoritmos y diagramas de flujo...</h3>
-                <div class="tarjet" style="float:left;">          
-                    <figure>
-                        <img  src="/img/fp2.png">
-                        <div class="capa">
-                            <h3>¡Recuerda!</h3>
-                            <p>Un programa es una secuencia de instrucciones escrito en un leguaje de programación y un algoritmo es una secuencia de pasos ordenados para cumplir un objetivo, estos lo podemos reflejar en un diagrama de flujo   </p>
-                        </div>
-                    </figure>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Evento</th><th>Significado</th>
+                        </tr>
+                    </thead>
+        
+                    <tr>
+                        <td>Component Event</td><td>Cambios en el tamaño, posición o visibilidad de un componente</td>
+                    </tr>
+                    <tr>
+                        <td>FocusEvent</td><td>Cambio de foco (capacidad de un componente para recibir entradas desde el teclado)</td>
+                    </tr>
+                    <tr>
+                        <td>KeyEvent</td><td>Operación con el teclado
 
-            Es importante que sepas que <b> un programa no es más que una secuencia de instrucciones (escritas en algún lenguaje de programación) pensado para resolver algún tipo de problema.    </b>        
-                Hay que tener claro que si no sabemos resolver este problema, no podremos escribir el programa, es por eso que es importate que resuelvas el problema primero antes de comenzar a teclar. 
-                        <br>     <b> Un algoritmo es una secuencia de PASOS a seguir para resolver un problema. </b> estos los podemos ver reflejados graficamente por medio de los <b> diagramas de flujo</b>
-          Los <b>Diagramas de Flujo son es una representación gráfica del algoritmo.</b>  Gracias a estos podemos expresar los pasos del algoritmo mediante un esquema con unos símbolos establecidos, es recomendable realizar un diagrama de flujo antes de comenzar a programar, de 
-        esta forma nos ahorraremos mucho tiempo y dolores de cabeza.                    </p>
-           <p>
-               <h3 style="margin-top: 4rem;" >Sobre variables...</h3>
-               En programación, <b> una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. </b> Ese espacio contiene una cantidad de información conocida o desconocida, es decir un valor. El nombre de la variable es la forma usual de referirse al valor almacenado: esta separación entre nombre y contenido permite que el nombre sea usado independientemente de la información exacta que representa.
-               <img src="/img/fp3.jpg" class="fp3" alt="Tipos de variables">
-           </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MouseEvent</td><td>Operación con los botones del ratón o movimientos del ratón</td>
+                    </tr>
+                    <tr>
+                        <td>Window Event
+
+                        </td><td>Cambio de estado en una ventana
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AncestorEvent
+
+                        </td><td>Cambio en la composición, visibilidad o posición de un elemento superior (ancestro) de la jerarquía de composición</td>
+                    </tr>
+                </table>
+            </div>
+           <!-- ///// -->
+          <h3>Sobre Eventos semánticos... </h3>
+           Eventos de alto nivel que encapsulan la semántica del modelo de componentes del interfaz de usuario (Hacer una acción, un cambio de estado en un elemento, etc.). 
+           No están relacionados con una clase específica de componente sino que pueden aplicarse a todos los componentes que implementen un modelo semántico similar. 
+             </p> 
+
+             <div id="main-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Eventos de alto nivel
+                            </th> <th>Significado</th>
+                        </tr>
+                    </thead>
+        
+                    <tr>
+                        <td>ActionEvent
+
+                        </td><td>Realización de la acción específica asociada al componente.                      </td>
+                    </tr>
+                    <tr>
+                        <td>ChangeEvent</td>
+                        <td>Cambio en el estado del componente                        </td>
+                    </tr>
+                    <tr>
+                        <td>ItemEvent</td><td>Elemento seleccionado o deseleccionado
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caret Event</td><td>Cambio en la posición del cursor de inserción en un componente que gestiona texto</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ListSelectionEvent
+                        </td><td>Cambio en la selección actual en una lista                        </td>
+                    </tr>
+                    <tr>
+                        <td>AncestorEvent
+
+                        </td><td>Cambio en la composición, visibilidad o posición de un elemento superior (ancestro) de la jerarquía de composición</td>
+                    </tr>
+                </table>
+            </div>
+            <h3 style="font-size: 1.7rem;" >¿Estas listo para comenzar a practicar?</h3>
+            <a class="button" href="../juego/juego.html">¡Practicar!</a>   
+            
+            <br> <br>
+            <a class="btn-r" href="../niveles.html">Regresar</a>
+                      
+    
     </div>
-<h3 style="font-size: 1.7rem;" >¿Estas listo para comenzar a practicar?</h3>
-<a class="button" href="../juego/juego.html">¡Practicar!</a>   
-
-<br> <br>
-<a class="btn-r" href="../niveles/facil.html">Regresar</a>
 
 </div>
   </div>  
