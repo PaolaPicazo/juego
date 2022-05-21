@@ -7,11 +7,9 @@ var intervalo;
 
 let num = document.querySelector("#number");
 
-
-
 window.onload = function () {
   
-  base_preguntas = readText("base-preguntas.json");
+  base_preguntas = readText("ED-preguntas.json");
   interprete_bp = JSON.parse(base_preguntas);
   escogerPreguntaAleatoria();
   contador();
